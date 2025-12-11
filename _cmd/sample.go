@@ -13,6 +13,14 @@ func init() {
 	// Enable this to see heartbeat success logs (disabled by default).
 	//register.EnableHeartbeatLog(true)
 
+	//_ = register.Server("UserSample").
+	//	Reg(func(ctx context.Context, req loginReq) (loginResp, error) {
+	//		return loginResp{
+	//			Token:   "token-for-" + req.Username,
+	//			Profile: profileReq{UID: req.Username + "_uid"},
+	//		}, nil
+	//	}).Create()
+
 	// Example 1: user service
 	_ = register.Server("UserSample").
 		Env("fea_user").
