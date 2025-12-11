@@ -1,11 +1,11 @@
 package main
 
 import (
+	"github.com/jom-io/gorig-node/gnnode"
 	"github.com/jom-io/gorig/bootstrap"
-	"gorig-node/gnnode"
 )
 
-import _ "gorig-node/gnnode"
+import _ "github.com/jom-io/gorig-node/gnnode"
 
 func main() {
 	gnnode.RegServer()

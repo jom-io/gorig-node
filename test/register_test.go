@@ -12,8 +12,8 @@ import (
 	"testing"
 	"time"
 
-	"gorig-node/client/register"
-	"gorig-node/gncfg"
+	"github.com/jom-io/gorig-node/client/register"
+	"github.com/jom-io/gorig-node/gncfg"
 )
 
 // Simulate real flow: register two services and finally call Start.

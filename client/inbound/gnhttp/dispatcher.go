@@ -2,7 +2,7 @@ package gnhttp
 
 import (
 	"github.com/gin-gonic/gin"
-	"gorig-node/client/register"
+	"github.com/jom-io/gorig-node/client/register"
 	"io"
 	"reflect"
 )

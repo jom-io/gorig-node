@@ -3,7 +3,7 @@ package gnhttp
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
-	"gorig-node/client/register"
+	"github.com/jom-io/gorig-node/client/register"
 )
 
 func registerAllApisToRouter(router *gin.Engine) {

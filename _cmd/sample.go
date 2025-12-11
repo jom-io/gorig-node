@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"gorig-node/client/register"
+	"github.com/jom-io/gorig-node/client/register"
 )
 
 // Register a few sample services before main starts for local demo.

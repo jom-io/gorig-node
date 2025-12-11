@@ -1,7 +1,7 @@
 package inbound
 
 import (
-	"gorig-node/client/inbound/gnhttp"
+	"github.com/jom-io/gorig-node/client/inbound/gnhttp"
 )
 
 func StartInbound(addr string) error {

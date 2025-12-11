@@ -13,8 +13,8 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"gorig-node/client/inbound/gnhttp"
-	"gorig-node/client/register"
+	"github.com/jom-io/gorig-node/client/inbound/gnhttp"
+	"github.com/jom-io/gorig-node/client/register"
 )
 
 // Simulate HTTP calls to verify inbound routing and dispatch are correct.

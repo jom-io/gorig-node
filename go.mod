@@ -1,4 +1,4 @@
-module gorig-node
+module github.com/jom-io/gorig-node
 
 go 1.23.0
 

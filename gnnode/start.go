@@ -3,13 +3,13 @@ package gnnode
 import (
 	"context"
 	"fmt"
+	"github.com/jom-io/gorig-node/client/inbound"
+	"github.com/jom-io/gorig-node/client/register"
+	"github.com/jom-io/gorig-node/gncfg"
 	"github.com/jom-io/gorig/serv"
 	"github.com/jom-io/gorig/utils/logger"
 	"github.com/jom-io/gorig/utils/sys"
 	"go.uber.org/zap"
-	"gorig-node/client/inbound"
-	"gorig-node/client/register"
-	"gorig-node/gncfg"
 	"time"
 )
 
