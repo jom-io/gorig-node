@@ -140,6 +140,10 @@ github.com/pkg/errors v0.9.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINE
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2 h1:Jamvg5psRIccs7FGNTlIRMkT8wgtp5eCXdBlqhYGL6U=
 github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
+github.com/puugy/xzz-go/advancedsample v0.0.0-20251212072000-55c8073554d2 h1:xyZAmIau6WO2LZbixAv5KUJfBYgrbhjKhYqXNia5jrg=
+github.com/puugy/xzz-go/advancedsample v0.0.0-20251212072000-55c8073554d2/go.mod h1:J/FHrFtblHMHzjRlP6KuzRrAI8BscF80erOc4AX9fic=
+github.com/puugy/xzz-go/advancedsample v0.0.0-20251212072332-c88a3547b88a h1:4k0cGgXXxtyv1clUaxcjSJGU0MllunmuiX1dgn+nwoE=
+github.com/puugy/xzz-go/advancedsample v0.0.0-20251212072332-c88a3547b88a/go.mod h1:J/FHrFtblHMHzjRlP6KuzRrAI8BscF80erOc4AX9fic=
 github.com/puugy/xzz-go/ordersample v0.0.4 h1:qwlLejm2v3zgJESmFQXKz07i69huADnfy+dBmjKUb6M=
 github.com/puugy/xzz-go/ordersample v0.0.4/go.mod h1:E4n4Cazca6gajIRuiQkvF3aa9G8jkxqh0XIlQJd2Tsw=
 github.com/puugy/xzz-go/ordersample v0.0.5 h1:nmg+3OrB9DjzAjvVWxpN4Y4jJ9QykhgP9y9260j7uCY=
@@ -164,6 +168,8 @@ github.com/puugy/xzz-go/usersample v0.0.0-20251211064340-6f0f2f8438ec h1:s8lIflc
 github.com/puugy/xzz-go/usersample v0.0.0-20251211064340-6f0f2f8438ec/go.mod h1:+cR7oa2duqNJd8cN2Za6eMH3E5uXJdaOgeThIlR1dIs=
 github.com/puugy/xzz-go/usersample v0.0.0-20251211064721-5e2da64131a2 h1:wld1HxmZjxYbTQN52xiQx6trnxWTVEKX3PvPNU7fZVg=
 github.com/puugy/xzz-go/usersample v0.0.0-20251211064721-5e2da64131a2/go.mod h1:+cR7oa2duqNJd8cN2Za6eMH3E5uXJdaOgeThIlR1dIs=
+github.com/puugy/xzz-go/xzzserver v0.0.0-20251212091745-30e9810b6a78 h1:/y8Nk1CqNG/o6ZIO9/8Kq/OD5KVObOE8bP3Bs7y8DGM=
+github.com/puugy/xzz-go/xzzserver v0.0.0-20251212091745-30e9810b6a78/go.mod h1:/VsFXiSsZqnrvqIEVUIBKSzOWof1JHNYvBneoA3wYbw=
 github.com/qiniu/qmgo v1.1.8 h1:E64M+P59aqQpXKI24ClVtluYkLaJLkkeD2hTVhrdMks=
 github.com/qiniu/qmgo v1.1.8/go.mod h1:QvZkzWNEv0buWPx0kdZsSs6URhESVubacxFPlITmvB8=
 github.com/remyoudompheng/bigfft v0.0.0-20230129092748-24d4a6f8daec h1:W09IVJc94icq4NjY3clb7Lk8O1qJ8BdBEF8z0ibU0rE=

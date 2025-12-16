@@ -55,10 +55,11 @@ func buildTypeSchema(t reflect.Type, cache map[reflect.Type]*TypeSchema, inProgr
 			jsonTag := parseJsonTag(f.Tag.Get("json"))
 
 			fields = append(fields, FieldSchema{
-				Name:    f.Name,
-				Type:    f.Type.String(),
-				JsonTag: jsonTag,
-				Schema:  buildTypeSchema(f.Type, cache, inProgress),
+				Name:     f.Name,
+				Type:     f.Type.String(),
+				JsonTag:  jsonTag,
+				Embedded: f.Anonymous,
+				Schema:   buildTypeSchema(f.Type, cache, inProgress),
 			})
 		}
 		ts.Fields = fields

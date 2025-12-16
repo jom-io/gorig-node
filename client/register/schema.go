@@ -12,10 +12,11 @@ type TypeSchema struct {
 }
 
 type FieldSchema struct {
-	Name    string      `json:"name"`             // field name
-	Type    string      `json:"type"`             // full type string
-	JsonTag string      `json:"json_tag"`         // parsed json tag
-	Schema  *TypeSchema `json:"schema,omitempty"` // nested schema
+	Name     string      `json:"name"`               // field name
+	Type     string      `json:"type"`               // full type string
+	JsonTag  string      `json:"json_tag"`           // parsed json tag
+	Embedded bool        `json:"embedded,omitempty"` // whether the field is anonymous (embedded)
+	Schema   *TypeSchema `json:"schema,omitempty"`   // nested schema
 }
 
 type ArgDesc struct {

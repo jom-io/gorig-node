@@ -72,7 +72,7 @@ func init() {
 
 	//Example 4: pointer参数/返回 + 自引用 struct
 	_ = register.Server("AdvancedSample").
-		Env("dev").
+		Env("fea_advanced").
 		// pointer in/out: BuildTypeSchema 会解引用
 		RegName("PointerProfile", func(ctx context.Context, req *profileReq) (*profileResp, error) {
 			if req == nil {
@@ -139,4 +139,5 @@ type treeReq struct {
 type treeNode struct {
 	ID    int       `json:"id"`
 	Child *treeNode `json:"child,omitempty"`
+	Name  string
 }
