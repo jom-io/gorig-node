@@ -71,7 +71,9 @@ func buildTypeSchema(t reflect.Type, cache map[reflect.Type]*TypeSchema, inProgr
 			Kind: "slice",
 		}
 		cache[t] = ts
-		ts.Elem = buildTypeSchema(t.Elem(), cache, inProgress)
+		elemType := t.Elem()
+		elemSchema := buildTypeSchema(elemType, cache, inProgress)
+		ts.Elem = ensureElemSchema(elemSchema, elemType)
 		delete(inProgress, t)
 		return ts
 
@@ -80,7 +82,9 @@ func buildTypeSchema(t reflect.Type, cache map[reflect.Type]*TypeSchema, inProgr
 			Kind: "map",
 		}
 		cache[t] = ts
-		ts.Elem = buildTypeSchema(t.Elem(), cache, inProgress)
+		elemType := t.Elem()
+		elemSchema := buildTypeSchema(elemType, cache, inProgress)
+		ts.Elem = ensureElemSchema(elemSchema, elemType)
 		delete(inProgress, t)
 		return ts
 
@@ -106,6 +110,25 @@ func kindString(t reflect.Type) string {
 	default:
 		return "base"
 	}
+}
+
+// ensureElemSchema guarantees slice/map Elem is non-nil, even for self-referential types.
+func ensureElemSchema(elem *TypeSchema, rt reflect.Type) *TypeSchema {
+	if elem != nil {
+		return elem
+	}
+	base := stripPtr(rt)
+	return &TypeSchema{
+		Kind: kindString(base),
+		Name: base.String(),
+	}
+}
+
+func stripPtr(t reflect.Type) reflect.Type {
+	for t.Kind() == reflect.Ptr {
+		t = t.Elem()
+	}
+	return t
 }
 
 // validateSchemaType walks the type and rejects unsupported shapes for schema generation.
